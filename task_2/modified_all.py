@@ -229,7 +229,15 @@ def main():
                 print("Вихід із програми.")
                 break
             lexer = Lexer(text)
+            # token = lexer.get_next_token()
+            # while token.type != TokenType.EOF:
+            #     print(token)
+            #     token = lexer.get_next_token()
+
             parser = Parser(lexer)
+            # tree = parser.expr()
+            # print_ast(tree)
+            
             interpreter = Interpreter(parser)
             result = interpreter.interpret()
             print(result)
