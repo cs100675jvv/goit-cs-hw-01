@@ -5,6 +5,7 @@ section .data
     c db 2               ; Визначаємо c = 2
     resultMsg db 'Result: $' ; Визначення рядка для виведення результату
 
+;b-c+a
 section .text
 _start:
     mov al, [b]          ; Завантажуємо b в al
